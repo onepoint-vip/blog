@@ -10,11 +10,20 @@ li {
 }
 
 a {
+    color: #333333;
     text-decoration: none;
 }
 
+a:hover {
+    color: #0652DE;
+}
+
+a:checked {
+    color: #0652DE;
+}
+
 body {
-    background-color: #FFFFFF;
+    background-color: #EBEBEB;
 }
 
 .wrapper {
@@ -24,8 +33,13 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
     height: 60px;
     box-shadow: inset 0 -0.5px 0 rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 3%);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
 }
 
 .header-box {
@@ -40,6 +54,10 @@ header {
     line-height: 60px;
     color: #333333;
     box-shadow: inset -0.5px 0 0 rgb(0 0 0 / 20%);
+}
+
+.site-name a:hover {
+    color: #0652DE;
 }
 
 nav {
@@ -65,22 +83,13 @@ nav ul li a {
     color: #333333;
 }
 
-nav ul li a:hover {
-    color: #0652DE;
-}
-
 nav ul li:hover {
     border-bottom: 2px solid #0652DE;
-}
-
-nav ul li a:checked {
-    color: #0652DE;
 }
 
 nav ul li:checked {
     border-bottom: 2px solid #0652DE;
 }
-
 
 .search {
     position: relative;
@@ -124,7 +133,6 @@ nav ul li:checked {
     line-height: 36px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* background-color: blue; */
 }
 
 .iconfont::before {
@@ -135,5 +143,78 @@ nav ul li:checked {
     display: block;
     background-size: 100vw 1px;
     background-image: linear-gradient(to right, #e74c3c, #f1c40f, #2ecc71);
-    /* border: 2px solid blue; */
+}
+
+.article-list {
+    margin-top: 40px;
+    height: auto;
+    padding: 0 30px;
+}
+
+.card {
+    padding: 50px;
+    height: 300px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    box-shadow: rgb(19 17 16 / 10%) 0px 0.5rem 1rem -0.5rem;
+}
+
+.card-header {
+    margin-bottom: 1.6rem;
+    line-height: 44px;
+    word-spacing: 2px;
+}
+
+.card-header a:hover {
+    border-bottom: 2px solid #0652DE;
+}
+
+.card-content p {
+    /* p标签两行的省略号不生效，需要加下面3行代码即可 */
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    margin-bottom: 1.6rem;
+    height: 74px;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 1.7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #131110;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.post-time {
+    margin-right: 1em;
+    color: #858484;
+}
+
+.post-category {
+    margin-right: 1em;
+}
+
+.post-category a {
+    color: #858484;
+}
+
+.post-category a:hover {
+    color: #0652DE;
+}
+
+.detail-btn {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 0 auto;
+}
+
+.detail-btn a {
+    color: #0652DE;
 }
