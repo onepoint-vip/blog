@@ -149,8 +149,8 @@ nav ul li:checked {
     background-image: linear-gradient(to right, #e74c3c, #f1c40f, #2ecc71);
 }
 
-.article-list {
-    margin-top: 40px;
+.content {
+    margin-top: 60px;
     height: auto;
     padding: 0 30px;
 }
