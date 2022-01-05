@@ -1,0 +1,74 @@
+.content {
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    padding: 50px;
+}
+
+.detail-card {
+    /* border-radius: 10px; */
+    /* background-color: pink; */
+
+    /* padding: 50px;    */
+}
+
+.detail-header {
+    display: flex;
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.post-time {
+    margin-right: 1.5rem;
+}
+
+.back-btn {
+    display: flex;
+    justify-content: flex-end;
+    flex: auto;
+}
+
+.back-btn a {
+    /* color: #0652DE; */
+    /* 设置字体渐变色 */
+    background: linear-gradient(to right, #e74c3c, #f1c40f, #2ecc71);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    word-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.title-split {
+    margin: 48px 0;
+    width: 35%;
+    min-width: 10rem;
+    max-width: 100%;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(to right, #e74c3c, #f1c40f, #2ecc71);
+    border-image-slice: 10;
+}
+
+.detail-content {
+    margin-bottom: 48px;
+}
+
+.leave-msg {
+    background-color: #F7F7F7;
+}
+
+.msg-split {
+    margin-top: 20px;
+    border-top: 1px dashed #E5E5E4;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
