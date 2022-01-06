@@ -50,19 +50,33 @@
         </div>
 
         <h1>Nostris blandis iacuit</h1>
-        <hr class="title-split"/>
+        <hr class="title-split" />
 
         <div class="detail-content">富文本编辑器内容</div>
       </div>
 
-      <div class="leave-msg">
-          <h3>留言（50条）</h3>
-          <hr class="msg-split">
-          <div class="user-msg">
-              
+      <hr class="msg-split" />
+      <div class="leave-msg-area">
+        <div class="leave-msg-area-header">
+          <div class="leave-msg-area-header-title">
+            <h3>写留言</h3>
           </div>
-      </div>
 
+          <div class="leave-msg-area-header-desc">
+            <span>邮箱地址不会被公开。带 * 是必填项</span>
+          </div>
+        </div>
+
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          maxlength="65525"
+        ></textarea>
+
+        <div class="user-msg"></div>
+      </div>
     </div>
 
     <footer>
