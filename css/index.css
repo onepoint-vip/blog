@@ -27,6 +27,10 @@ a:checked {
 
 body {
     /* background-image: linear-gradient(45deg, #e74c3c, #f1c40f, #2ecc71); */
+    /* 设置铺满整个视口高度 */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     background-color: #EBEBEB;
 }
 
@@ -156,7 +160,7 @@ nav ul li:checked {
 }
 
 .content {
-    margin: 60px auto;
+    margin-top: 60px;
     height: auto;
     padding: 0 30px;
 }
@@ -298,6 +302,7 @@ nav ul li:checked {
 footer {
     display: flex;
     justify-content: center;
+    margin-top: auto;
     height: 60px;
     line-height: 60px;
     box-shadow: inset 0 -0.5px 0 rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 3%);
